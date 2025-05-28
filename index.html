@@ -1,116 +1,128 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Prasanna Katipally | Portfolio</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      color: #fff;
-    }
-    header {
-      text-align: center;
-      padding: 3rem 1rem;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      color: #64ffda;
-    }
-    header p {
-      font-size: 1.2rem;
-      max-width: 600px;
-      margin: 1rem auto;
-    }
-    .section {
-      padding: 2rem 1rem;
-      max-width: 900px;
-      margin: auto;
-    }
-    .section h2 {
-      color: #64ffda;
-      margin-bottom: 1rem;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    li {
-      background: #1e2a38;
-      margin: 0.5rem 0;
-      padding: 1rem;
-      border-left: 4px solid #64ffda;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      color: #aaa;
-    }
-    a {
-      color: #64ffda;
-      text-decoration: none;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Hi, I'm Prasanna Katipally</h1>
-    <p>B.Tech student in AI & ML | Passionate about IoT, Web Development & AI | CGPA: 9.44</p>
-    <p><a href="mailto:prasannakatipally373@gmail.com">📧 Email</a> | <a href="https://www.linkedin.com/in/prasannakatipally">🔗 LinkedIn</a> | 📞 +91 7569309436</p>
-  </header>
+<!DOCTYPE html><html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prasanna Katipally - Portfolio</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+        color: #fff;
+        padding: 2rem;
+      }
+      header {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+      header h1 {
+        font-size: 3rem;
+      }
+      header p {
+        font-size: 1.2rem;
+        color: #ccc;
+      }
+      .buttons {
+        margin-top: 1rem;
+      }
+      .buttons a {
+        display: inline-block;
+        margin: 0.5rem;
+        padding: 0.75rem 1.5rem;
+        background: #00c9ff;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+      section {
+        margin-bottom: 3rem;
+      }
+      h2 {
+        border-bottom: 2px solid #00c9ff;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1rem;
+      }
+      .skills, .projects, .certificates {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1rem;
+      }
+      .card {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 1rem;
+        border-radius: 10px;
+        backdrop-filter: blur(5px);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Hi, I am Prasanna Katipally</h1>
+      <p>A passionate B.Tech student specializing in AI & ML, with experience in IoT, Web Development, and Python-based projects.</p>
+      <div class="buttons">
+        <a href="#">Download CV</a>
+        <a href="#projects">Start Project</a>
+      </div>
+    </header><section id="about">
+  <h2>About Me</h2>
+  <p>
+    I'm currently pursuing my B.Tech in Computer Science (AI & ML) at GRIET. With a CGPA of 9.44, I love building intelligent systems and contributing to real-world tech problems. I have hands-on experience in Python, IoT, Web Development, and more.
+  </p>
+</section>
 
-  <div class="section">
-    <h2>About Me</h2>
-    <p>Currently pursuing B.Tech in Computer Science (AI & ML) at GRIET. I enjoy solving real-world problems using technology and have hands-on experience with IoT, Python, and Web technologies.</p>
+<section id="skills">
+  <h2>My Skills</h2>
+  <div class="skills">
+    <div class="card">Java</div>
+    <div class="card">Python</div>
+    <div class="card">C</div>
+    <div class="card">MySQL</div>
+    <div class="card">DBMS</div>
+    <div class="card">HTML</div>
+    <div class="card">CSS</div>
+    <div class="card">JavaScript</div>
   </div>
+</section>
 
-  <div class="section">
-    <h2>Skills</h2>
-    <ul>
-      <li>Java, Python, C</li>
-      <li>MySQL, DBMS</li>
-      <li>HTML, CSS, JavaScript</li>
-      <li>VS Code, GitHub</li>
-      <li>Presentation & Communication Skills</li>
-    </ul>
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="card">
+      <strong>Home Automation System</strong><br />
+      IoT, Arduino IDE, Embedded C
+    </div>
+    <div class="card">
+      <strong>Image Steganography</strong><br />
+      Python, PIL, Tkinter, NumPy
+    </div>
+    <div class="card">
+      <strong>Live Weather Forecasting Web App</strong><br />
+      HTML, CSS, JavaScript, API
+    </div>
+    <div class="card">
+      <strong>Smart Waste Management System</strong><br />
+      NodeMCU, Python, C++, ML, CNN
+    </div>
   </div>
+</section>
 
-  <div class="section">
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>Home Automation System:</strong> IoT, Arduino IDE, Embedded C</li>
-      <li><strong>Image Steganography:</strong> Python, Tkinter, PIL, NumPy</li>
-      <li><strong>Live Weather Forecasting Web App:</strong> HTML, CSS, JavaScript, API</li>
-      <li><strong>Smart Waste Management System:</strong> IoT, Python, C++, ML, CNN</li>
-    </ul>
+<section id="certificates">
+  <h2>Certificates</h2>
+  <div class="certificates">
+    <div class="card">NPTEL</div>
+    <div class="card">Google Cloud</div>
+    <div class="card">Cisco</div>
+    <div class="card">AWS</div>
+    <div class="card">HackerRank</div>
   </div>
+</section>
 
-  <div class="section">
-    <h2>Certifications</h2>
-    <ul>
-      <li>NPTEL - IIoT (Top 5%)</li>
-      <li>Google Cloud - Generative AI Virtual Internship</li>
-      <li>Cisco - Cybersecurity & CCNA Intro</li>
-      <li>AWS - Cloud Foundations, Architecting, Machine Learning</li>
-      <li>HackerRank - Python (Basic)</li>
-    </ul>
-  </div>
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: prasannakatipally373@gmail.com</p>
+  <p>Phone: +91 7569309436</p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/prasannakatipally" style="color:#00c9ff">@prasannakatipally</a></p>
+</section>
 
-  <div class="section">
-    <h2>Extra Curricular Activities</h2>
-    <ul>
-      <li>Leadership & Volunteering</li>
-      <li>Robotics & IoT Enthusiast</li>
-      <li>Hackathon Participant</li>
-      <li>Arts & Sports</li>
-    </ul>
-  </div>
-
-  <footer>
-    &copy; 2025 Prasanna Katipally. Built with ❤️
-  </footer>
-</body>
+  </body>
 </html>
