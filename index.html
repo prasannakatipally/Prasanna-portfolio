@@ -1,16 +1,158 @@
-import React from "react"; import { Card, CardContent } from "@/components/ui/card"; import { Button } from "@/components/ui/button"; import { Mail, Linkedin, Github } from "lucide-react"; import { motion } from "framer-motion"; export default function Portfolio() { return (
-Hi, I am Prasanna Katipally
-A passionate B.Tech student specializing in AI & ML, with experience in IoT, Web Development, and Python-based projects.
+<!DOCTYPE html>
+<html lang="en">
 
-Download CV Start Project
-About Me
-I'm currently pursuing my B.Tech in Computer Science (AI & ML) at GRIET. With a CGPA of 9.44, I love building intelligent systems and contributing to real-world tech problems. I have hands-on experience in Python, IoT, Web Development, and more.
-My Skills
-{['Java', 'Python', 'C', 'MySQL', 'DBMS', 'HTML', 'CSS', 'JavaScript'].map(skill => ( {skill} ))}
-Projects
-{[{ title: 'Home Automation System', tech: 'IoT, Arduino IDE, Embedded C' }, { title: 'Image Steganography', tech: 'Python, Tkinter, PIL, NumPy' }, { title: 'Live Weather Forecasting Web App', tech: 'HTML, CSS, JS, API' }, { title: 'Smart Waste Management System', tech: 'IoT, Python, C++, ML, CNN' }].map(proj => (
-{proj.title}
-{proj.tech}
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prasanna Katipally | Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: white;
+    }
 
-))}
-Certificates
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      color: #00f9ff;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #ddd;
+      margin-bottom: 20px;
+    }
+
+    .section {
+      padding: 30px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      color: #00f9ff;
+      border-bottom: 2px solid #00f9ff;
+      display: inline-block;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .project, .certificate {
+      background-color: #1c1c1e;
+      padding: 15px;
+      margin: 10px 0;
+      border-left: 4px solid #00f9ff;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #00f9ff;
+      color: black;
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Hi, I'm Prasanna Katipally</h1>
+    <p>A B.Tech student passionate about AI & ML, IoT, and full-stack development</p>
+    <a class="button" href="#">Download CV</a>
+    <a class="button" href="#">Start Project</a>
+  </header>
+
+  <section class="section">
+    <h2>About Me</h2>
+    <p>I am currently pursuing my B.Tech in Computer Science (AI & ML) at GRIET with a CGPA of 9.44. I'm skilled in building intelligent systems, web apps, and IoT solutions. I'm driven by curiosity and the desire to create real-world impact.</p>
+  </section>
+
+  <section class="section">
+    <h2>Skills</h2>
+    <ul>
+      <li>Java, Python, C</li>
+      <li>MySQL, DBMS</li>
+      <li>HTML, CSS, JavaScript</li>
+      <li>GitHub, VS Code</li>
+      <li>Presentation & Communication Skills</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Projects</h2>
+    <div class="project">
+      <strong>Home Automation System</strong><br />
+      IoT, Arduino IDE, Embedded C
+    </div>
+    <div class="project">
+      <strong>Image Steganography</strong><br />
+      Python, Tkinter, PIL, NumPy
+    </div>
+    <div class="project">
+      <strong>Live Weather Forecasting Web App</strong><br />
+      HTML, CSS, JavaScript, OpenWeatherMap API
+    </div>
+    <div class="project">
+      <strong>Smart Waste Management System</strong><br />
+      IoT, Python, C++, ML, CNN
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Certifications</h2>
+    <div class="certificate">
+      NPTEL - IIoT (Top 5%)
+    </div>
+    <div class="certificate">
+      Google Cloud - Generative AI Virtual Internship
+    </div>
+    <div class="certificate">
+      CISCO - Introduction to Cybersecurity, CCNA
+    </div>
+    <div class="certificate">
+      AWS Academy Graduate - Cloud Architecting, ML, Foundations
+    </div>
+    <div class="certificate">
+      HackerRank - Python (Basic)
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Contact Me</h2>
+    <p>Email: prasannakatipally373@gmail.com</p>
+    <p>Phone: +91 7569309436</p>
+    <p>Location: Kamareddy, Telangana</p>
+    <p>LinkedIn: <a style="color: #00f9ff;" href="https://www.linkedin.com/in/prasannakatipally">/in/prasannakatipally</a></p>
+  </section>
+
+  <footer>
+    © 2025 Prasanna Katipally. All rights reserved.
+  </footer>
+</body>
+
+</html>
