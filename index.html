@@ -1,136 +1,16 @@
-<!DOCTYPE html><html lang="en"><head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Prasanna Katipally | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }body {
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-  color: #fff;
-  line-height: 1.6;
-}
+import React from "react"; import { Card, CardContent } from "@/components/ui/card"; import { Button } from "@/components/ui/button"; import { Mail, Linkedin, Github } from "lucide-react"; import { motion } from "framer-motion"; export default function Portfolio() { return (
+Hi, I am Prasanna Katipally
+A passionate B.Tech student specializing in AI & ML, with experience in IoT, Web Development, and Python-based projects.
 
-header {
-  text-align: center;
-  padding: 3rem 1rem;
-}
+Download CV Start Project
+About Me
+I'm currently pursuing my B.Tech in Computer Science (AI & ML) at GRIET. With a CGPA of 9.44, I love building intelligent systems and contributing to real-world tech problems. I have hands-on experience in Python, IoT, Web Development, and more.
+My Skills
+{['Java', 'Python', 'C', 'MySQL', 'DBMS', 'HTML', 'CSS', 'JavaScript'].map(skill => ( {skill} ))}
+Projects
+{[{ title: 'Home Automation System', tech: 'IoT, Arduino IDE, Embedded C' }, { title: 'Image Steganography', tech: 'Python, Tkinter, PIL, NumPy' }, { title: 'Live Weather Forecasting Web App', tech: 'HTML, CSS, JS, API' }, { title: 'Smart Waste Management System', tech: 'IoT, Python, C++, ML, CNN' }].map(proj => (
+{proj.title}
+{proj.tech}
 
-header h1 {
-  font-size: 2.5rem;
-  color: #00f7ff;
-}
-
-header p {
-  font-size: 1.2rem;
-  color: #ccc;
-}
-
-.section {
-  padding: 2rem 1rem;
-  max-width: 1000px;
-  margin: auto;
-}
-
-h2 {
-  font-size: 2rem;
-  border-bottom: 2px solid #00f7ff;
-  margin-bottom: 1rem;
-  padding-bottom: 0.5rem;
-  color: #00f7ff;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-}
-
-.card {
-  background-color: rgba(255, 255, 255, 0.05);
-  padding: 1rem;
-  border-radius: 10px;
-  border: 1px solid #00f7ff55;
-  transition: transform 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-footer {
-  text-align: center;
-  padding: 2rem 1rem;
-  color: #aaa;
-}
-
-a {
-  color: #00f7ff;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-  </style>
-</head><body>
-  <header>
-    <h1>Prasanna Katipally</h1>
-    <p>B.Tech CSE (AI & ML) | Web Developer | AI/ML Enthusiast</p>
-  </header>  <section class="section">
-    <h2>About Me</h2>
-    <p>I'm a passionate learner and AI/ML enthusiast from Kamareddy, Telangana. I enjoy building real-world solutions using web technologies and machine learning.</p>
-  </section>  <section class="section">
-    <h2>Skills</h2>
-    <div class="grid">
-      <div class="card">Java</div>
-      <div class="card">Python</div>
-      <div class="card">C</div>
-      <div class="card">MySQL</div>
-      <div class="card">HTML, CSS, JavaScript</div>
-      <div class="card">GitHub</div>
-    </div>
-  </section>  <section class="section">
-    <h2>Projects</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Home Automation System</h3>
-        <p>IoT, Arduino IDE, Embedded C</p>
-      </div>
-      <div class="card">
-        <h3>Image Steganography</h3>
-        <p>Python, Tkinter, PIL, NumPy</p>
-      </div>
-      <div class="card">
-        <h3>Live Weather Forecasting Web App</h3>
-        <p>HTML, CSS, JS, OpenWeather API</p>
-      </div>
-      <div class="card">
-        <h3>Smart Waste Management System</h3>
-        <p>NodeMCU, Python, ML, CNN</p>
-      </div>
-    </div>
-  </section>  <section class="section">
-    <h2>Certifications</h2>
-    <ul>
-      <li>NPTEL: IIoT (Top 5%)</li>
-      <li>Google Cloud: Generative AI Internship</li>
-      <li>Cisco: Cybersecurity & CCNA</li>
-      <li>AWS: Cloud Architecting, Foundations, ML</li>
-      <li>HackerRank: Python (Basic)</li>
-    </ul>
-  </section>  <section class="section">
-    <h2>Contact</h2>
-    <p>📧 <a href="mailto:prasannakatipally373@gmail.com">prasannakatipally373@gmail.com</a><br>
-      📞 +91 7569309436<br>
-      🌐 <a href="https://www.linkedin.com/in/prasannakatipally">LinkedIn</a>
-    </p>
-  </section>  <footer>
-    &copy; 2025 Prasanna Katipally. All Rights Reserved.
-  </footer>
-</body></html>
+))}
+Certificates
